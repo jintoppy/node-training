@@ -1,0 +1,3 @@
+exports.Obj = {
+    hi: 'sdf'
+};
