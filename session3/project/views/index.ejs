@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <% include partials/_header %>
+</head>
+<body ng-controller="MyCtrl">
+    This is from server
+    <h1><%= msg %></h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th></th>
+        </tr>
+        <% users.forEach(function(user){ %>
+        <tr>
+            <td><%= user.name %></td>
+            <td><%= user.age %></td>
+            <td></td>
+        </tr>
+        <% }); %>
+    </table>
+
+    {{myname}}
+
+    <script src="app.js"></script>
+    <footer>
+        <% include partials/_footer %>
+
+    </footer>
+</body>
+</html>

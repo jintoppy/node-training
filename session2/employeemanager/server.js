@@ -3,8 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const api = require('./api');
 
-
-
 const server = http.createServer((request, response) => {
     console.log(request.method);
     if(request.url === '/'){
@@ -43,5 +41,3 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(3100);
-
-
